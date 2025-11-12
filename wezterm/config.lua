@@ -5,6 +5,7 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
+config.macos_window_background_blur = 30
 config.default_cursor_style = "SteadyBar"
 config.automatically_reload_config = true
 config.window_close_confirmation = "NeverPrompt"
