@@ -20,6 +20,9 @@ return {
       }
     },
 
+    frontmatter = {
+	enabled = false
+    },
     -- see below for full list of options 👇
     legacy_commands = false,
  },
