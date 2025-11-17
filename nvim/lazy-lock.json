@@ -1,6 +1,7 @@
 {
   "lazy.nvim": { "branch": "main", "commit": "85c7ff3711b730b4030d03144f6db6375044ae82" },
   "markview.nvim": { "branch": "main", "commit": "31f9a2611e0f373d19281c129b9a40272c124d26" },
+  "nvim-lspconfig": { "branch": "master", "commit": "dc7e7c7699cc01b1b6fefa97f9b496d8f447d7a1" },
   "obsidian.nvim": { "branch": "main", "commit": "01cde93f6705e7f20c14857a30f5f5bf6140f808" },
   "snacks.nvim": { "branch": "main", "commit": "dec29f55666f8f4545835636077a86b150faf630" }
 }

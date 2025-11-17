@@ -1,7 +1,16 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+
 require("config.lazy")
+
+-- TypeScript LSP 
+vim.lsp.enable({
+  "vtsls",
+})
 
 -- Snacks Explorer (file browser)
 vim.keymap.set("n", "<leader>e", function()
