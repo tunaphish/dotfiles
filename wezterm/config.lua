@@ -30,48 +30,13 @@ config.background = {
 		},
 		width = "100%",
 		height = "100%",
-		-- opacity = 0.55,
 		opacity = 0.90,
-		-- opacity = 1,
 	},
 }
--- config.window_background_opacity = 0.3
--- config.macos_window_background_blur = 20
+
 config.keys = {
 	{ key = "Enter", mods = "CTRL", action = wezterm.action({ SendString = "\x1b[13;5u" }) },
 	{ key = "Enter", mods = "SHIFT", action = wezterm.action({ SendString = "\x1b[13;2u" }) },
 }
--- from: https://akos.ma/blog/adopting-wezterm/
-config.hyperlink_rules = {
-	-- Matches: a URL in parens: (URL)
-	{
-		regex = "\\((\\w+://\\S+)\\)",
-		format = "$1",
-		highlight = 1,
-	},
-	-- Matches: a URL in brackets: [URL]
-	{
-		regex = "\\[(\\w+://\\S+)\\]",
-		format = "$1",
-		highlight = 1,
-	},
-	-- Matches: a URL in curly braces: {URL}
-	{
-		regex = "\\{(\\w+://\\S+)\\}",
-		format = "$1",
-		highlight = 1,
-	},
-	-- Matches: a URL in angle brackets: <URL>
-	{
-		regex = "<(\\w+://\\S+)>",
-		format = "$1",
-		highlight = 1,
-	},
-	-- Then handle URLs not wrapped in brackets
-	{
-		regex = "[^(]\\b(\\w+://\\S+[)/a-zA-Z0-9-]+)",
-		format = "$1",
-		highlight = 1,
-	},
-}
+
 return config
